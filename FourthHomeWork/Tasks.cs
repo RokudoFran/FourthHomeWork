@@ -13,18 +13,18 @@ namespace FourthHomeWork
         {
             
             int i = 0;
-            int min = array[i];
+            int minValue = array[i];
             string message = "";
 
             for (i = 0; i < array.Length; i++)
             {
-                if (array[i] < min)
+                if (array[i] < minValue)
                 {
-                    min = array[i];
+                    minValue = array[i];
                 }
             }
 
-            message = $"Минимальный элемент массива равен {min}";
+            message = $"Минимальный элемент массива равен {minValue}";
 
             return message;
         }
@@ -33,18 +33,18 @@ namespace FourthHomeWork
         public static string Еxercise2(int[] array)
         {
             int i = 0;
-            int max = array[i];
+            int maxValue = array[i];
             string message = "";
 
             for (i = 0; i < array.Length; i++)
             {
-                if (array[i] > max)
+                if (array[i] > maxValue)
                 {
-                    max = array[i];
+                    maxValue = array[i];
                 }
             }
 
-            message = $"Максимальный элемент массива равен {max}";
+            message = $"Максимальный элемент массива равен {maxValue}";
 
             return message;
         }
@@ -53,20 +53,20 @@ namespace FourthHomeWork
         public static string Еxercise3(int[] array)
         {
             int i = 0;
-            int indexmin = 0;
-            int min = array[i];
+            int minIndex = 0;
+            int minValue = array[i];
             string message = "";
 
             for (i = 0; i < array.Length; i++)
             {
-                if (array[i] < min)
+                if (array[i] < minValue)
                 {
-                    min = array[i];
-                    indexmin = i;
+                    minValue = array[i];
+                    minIndex = i;
                 }
             }
 
-            message = $" Индекс минимального элемента массива равен {indexmin}";
+            message = $" Индекс минимального элемента массива равен {minIndex}";
 
             return message;
         }
@@ -75,20 +75,20 @@ namespace FourthHomeWork
         public static string Еxercise4(int[] array)
         {
             int i = 0;
-            int indexmax = 0;
-            int max = array[i];
+            int maxIndex = 0;
+            int maxValue = array[i];
             string message = "";
 
             for (i = 0; i < array.Length; i++)
             {
-                if (array[i] > max)
+                if (array[i] > maxValue)
                 {
-                    max = array[i];
-                    indexmax = i;
+                    maxValue = array[i];
+                    maxIndex = i;
                 }
             }
 
-            message = $" Индекс максимальный элемент массива равен {indexmax}";
+            message = $" Индекс максимальный элемент массива равен {maxIndex}";
 
             return message;
         }
