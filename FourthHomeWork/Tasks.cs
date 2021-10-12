@@ -100,12 +100,9 @@ namespace FourthHomeWork
             int sum = 0;
             int i = 0;
 
-            for ( i = 0 ; i < array.Length ; i++ )
+            for ( i = 1 ; i < array.Length ; i+=2 )
             {
-                if ( i % 2 != 0 )
-                {
-                    sum += array[i];
-                }
+                sum += array[i];
             }
 
             message = ($" Cумма элементов массива с нечетными индексами равна {sum}");
@@ -201,7 +198,7 @@ namespace FourthHomeWork
 
         //Отсортировать массив по убыванию одним из способов, (отличным от способа в 9-м задании) :
         //пузырьком(Bubble), выбором(Select) или вставками(Insert))
-        public static int[] Еxercise0(int[] array)
+        public static int[] Еxercise10(int[] array)
         {
             int tmp = 0;
             int j = 0;
